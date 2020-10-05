@@ -1,0 +1,44 @@
+{
+  "name": "xprezzo-serve-static",
+  "description": "Serve static files",
+  "version": "1.1.0",
+  "author": "Ben Ajenoui <info@seohero.io>",
+  "license": "MIT",
+  "repository": "xprezzo/xprezzo-serve-static",
+  "dependencies": {
+    "encodeurl": "~1.0.2",
+    "escape-html": "~1.0.3",
+    "parseurl": "~1.3.3",
+    "xprezzo-send": "1.1.0"
+  },
+  "devDependencies": {
+    "after": "0.8.2",
+    "eslint": "7.8.1",
+    "eslint-config-standard": "14.1.1",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-markdown": "1.0.2",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-standard": "4.0.1",
+    "expect.js": "0.3.1",
+    "mocha": "8.1.3",
+    "nyc": "15.1.0",
+    "supertest": "4.0.2",
+    "xprezzo-buffer": "1.0.1"
+  },
+  "files": [
+    "LICENSE",
+    "HISTORY.md",
+    "index.js"
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "lint": "eslint --plugin markdown --ext js,md .",
+    "test": "mocha --reporter spec --bail --check-leaks test/",
+    "test-cov": "nyc --reporter=html --reporter=text npm test",
+    "test-ci": "nyc --reporter=text npm test -- --no-exit",
+    "version": "node scripts/version-history.js && git add HISTORY.md"
+  }
+}
