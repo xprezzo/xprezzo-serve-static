@@ -1,6 +1,6 @@
 /*!
  * xprezzo-serve-static
- * Copyright(c) 2020 Ben Ajenoui <info@seohero.io>
+ * Copyright(c) 2022 Cloudgen Wong <cloudgen.wong@gmail.com>
  * MIT Licensed
  */
 
